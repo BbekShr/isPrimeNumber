@@ -18,6 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keyboard" translatesAutoresizingMaskIntoConstraints="NO" id="BY2-G0-HHh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOM-0P-t3M">
+                                <rect key="frame" x="0.0" y="235" width="375" height="21"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                             <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANx-zN-k1N">
                                 <rect key="frame" x="151" y="178" width="79" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -29,10 +40,11 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check if the Number is Prime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz8-xS-A6F">
-                                <rect key="frame" x="0.0" y="73" width="375" height="32"/>
+                                <rect key="frame" x="0.0" y="73" width="375" height="32.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jlk-XQ-G5O">
                                 <rect key="frame" x="142" y="125" width="97" height="30"/>
@@ -40,28 +52,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOM-0P-t3M">
-                                <rect key="frame" x="0.0" y="235" width="375" height="21"/>
-                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0096537812081503027" alpha="0.53034032534246578" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Hz8-xS-A6F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="1jF-4y-JEA"/>
                             <constraint firstItem="Jlk-XQ-G5O" firstAttribute="top" secondItem="Hz8-xS-A6F" secondAttribute="bottom" constant="20" id="2qS-pw-Xlx"/>
+                            <constraint firstItem="BY2-G0-HHh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3gc-RW-Sxt"/>
+                            <constraint firstItem="BY2-G0-HHh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="EYK-0J-koo"/>
                             <constraint firstItem="Hz8-xS-A6F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ml6-ft-3ju"/>
                             <constraint firstItem="wOM-0P-t3M" firstAttribute="centerX" secondItem="ANx-zN-k1N" secondAttribute="centerX" constant="-3" id="MsD-Vy-EJJ"/>
                             <constraint firstItem="ANx-zN-k1N" firstAttribute="top" secondItem="Jlk-XQ-G5O" secondAttribute="bottom" constant="23" id="TUS-io-QWf"/>
+                            <constraint firstItem="BY2-G0-HHh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Y3R-QU-8X6"/>
                             <constraint firstItem="Jlk-XQ-G5O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="acc-sM-jqJ"/>
                             <constraint firstItem="wOM-0P-t3M" firstAttribute="top" secondItem="ANx-zN-k1N" secondAttribute="bottom" constant="27" id="eKf-4h-MPG"/>
                             <constraint firstItem="Hz8-xS-A6F" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gbs-j8-V9L"/>
                             <constraint firstItem="wOM-0P-t3M" firstAttribute="leading" secondItem="Hz8-xS-A6F" secondAttribute="leading" id="iDC-Mv-9He"/>
                             <constraint firstItem="Hz8-xS-A6F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iVp-Fl-K5n"/>
                             <constraint firstItem="Jlk-XQ-G5O" firstAttribute="centerX" secondItem="Hz8-xS-A6F" secondAttribute="centerX" id="vMV-KP-qVU"/>
+                            <constraint firstItem="BY2-G0-HHh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yhQ-gm-0ha"/>
                             <constraint firstItem="ANx-zN-k1N" firstAttribute="centerX" secondItem="Jlk-XQ-G5O" secondAttribute="centerX" id="zQt-u4-ed2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -76,4 +85,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="103.89805097451276"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="keyboard" width="1800" height="1200"/>
+    </resources>
 </document>
